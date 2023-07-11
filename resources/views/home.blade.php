@@ -1,3 +1,4 @@
+<!-- loginのカード部分 -->
 @extends('layouts.app')
 
 @section('content')

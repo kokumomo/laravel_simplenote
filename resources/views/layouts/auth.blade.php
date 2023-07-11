@@ -75,34 +75,12 @@
             </div>
         </nav>
 
-        <main class="main">
-        @if(session('success'))
-            <div class="alert alert-success" role="alert">
-              {{ session('success') }}
-            </div>
-        @endif
-          <div class="row" style='height: 92vh;'>
-            <div class="col-md-2 p-0">
-                <div class="card h-100">
-                    <div class="card-header">タグ一覧</div>
-                    <div class="card-body py-2 px-4"><a class='d-block' href='/'>全て表示</a></div>
-                </div>
-            </div>
-            <div class="col-md-4 p-0">
-              <div class="card h-100">
-              <div class="card-header d-flex">メモ一覧 <a class='ml-auto' href='/create'><i class="fas fa-plus-circle"></i></a></div>
-              <div class="card-body p-2"></div>
-            </div>    
-          </div> <!-- col-md-3 -->
-          <div class="col-md-6 p-0">@yield('content')</div>
-          </div> <!-- row justify-content-center -->
+        <main class="py-4">
+            @yield('content')
         </main>
     </div>
-    @yield('footer')
 </body>
 </html>
-
-
 
 
 
