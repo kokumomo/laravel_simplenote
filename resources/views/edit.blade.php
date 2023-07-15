@@ -6,7 +6,7 @@
         <div class="card-header d-flex justify-content-between">メモ編集
             <form action="/delete/{{$memo['id']}}" id='delete-form'>
                 @csrf
-                <button><i id='delete-button' class="fas fa-trash"></i></button>
+                <button class='p-0 mr-2' style='border:none;'><i id='delete-button' class="fas fa-trash"></i></button>
             </form>
         </div>
         <div class="card-body">
